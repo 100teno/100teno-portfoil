@@ -7,8 +7,6 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-
-
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -27,8 +25,6 @@ window.onscroll = () => {
       };
     });
     
-    
-
     let header = document.querySelector('header');
     
     header.classList.toggle('sticky', window.scrollY > 100);
@@ -36,14 +32,9 @@ window.onscroll = () => {
 
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
-    
-    
-    
-    
 };
-/*==================== scroll reveal ====================*/
+
 ScrollReveal({ 
-    // reset: true,
     distance:'80px',
     duration: 2000,
     delay: 200
@@ -54,8 +45,6 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box,contact fo
 ScrollReveal().reveal('.home-content h1, .about-img ', { origin: 'left'});
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
 
-
-/*==================== typed js ====================*/
 const typed = new Typed('.multiple-text', {
     strings: ['Fullstack Developer', 'Fissurado em Tecnologia', 'Viciado em vencer'],
     typeSpeed: 100,
